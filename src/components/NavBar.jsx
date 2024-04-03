@@ -12,12 +12,11 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
-    //console.log('click')
     setIsOpen(!isOpen);
   };
 
   return (
-    <header className=' sticky top-0 bg-slate-900 p-2 md:flex md:justify-between md:items-center shadow-md z-110'>
+    <header className=' sticky top-0 bg-slate-900 p-2 md:flex md:justify-between md:items-center shadow-md  z-50'>
       <nav className=' flex justify-between items-center my-2'>
         <div>
         <NavLink to='/'>
@@ -28,28 +27,28 @@ function NavBar() {
          {/* open nav bar */}
          <nav className={`${isOpen?'block duration-500':'hidden'} md:hidden w-1/2 flex justify-end gap-3`}>
          <div className=' flex justify-center items-center list-none flex-col'>
-          <NavLink to='/' className={({isActive})=>`${isActive?'text-white':' text-yellow-300'} text-red-500`}>
+          <NavLink to='/' className={({isActive})=>`${isActive?' text-blue-500':' text-white'} text-red-500 hover:text-blue-500`}>
                 Home
           </NavLink>
 
-          <NavLink to='aboute' className={({isActive})=>`${isActive?'text-white ':' text-yellow-300'} text-red-500 `}>
+          <NavLink to='aboute' className={({isActive})=>`${isActive?' text-blue-500':' text-white'} text-red-500 hover:text-blue-500`}>
                 Aboute
           </NavLink>
 
-          <NavLink to='github' className={({isActive})=>`${isActive?'text-white':' text-yellow-300'} text-red-500`}>
+          <NavLink to='github' className={({isActive})=>`${isActive?' text-blue-500':' text-white'} text-red-500 hover:text-blue-500`}>
                 Github
           </NavLink>
 
-          <NavLink to='skills' className={({isActive})=>`${isActive?'text-white':' text-yellow-300'} text-red-500`}>
+          <NavLink to='skills' className={({isActive})=>`${isActive?' text-blue-500':' text-white'} text-red-500 hover:text-blue-500`}>
                 Skills
           </NavLink>
 
-          <NavLink to='contactUs' className={({isActive})=>`${isActive?'text-white':' text-yellow-300'} text-red-500`}>
+          <NavLink to='contactUs' className={({isActive})=>`${isActive?' text-blue-500':' text-white'} text-red-500 hover:text-blue-500`}>
             Contact Us
             </NavLink>
          </div>
 
-         <div className='text-3xl text-white cursor-pointer'>
+         <div className='text-4xl px-3 text-white cursor-pointer'>
          <FontAwesomeIcon onClick={()=>{
            if(isOpen) setIsOpen(!isOpen);
          }} icon={faXmark} />
@@ -57,7 +56,7 @@ function NavBar() {
 
          </nav>
 
-        <div className={`${isOpen?'hidden':'block'} cursor-pointer`}>
+        <div className={`${isOpen?'hidden':'block'} cursor-pointer px-3`}>
         <FontAwesomeIcon onClick={toggleNavbar} icon={faBars} className=' text-white text-4xl md:hidden' />
         </div>
       </nav>

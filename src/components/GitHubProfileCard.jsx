@@ -23,7 +23,7 @@ const GitHubProfileCard = ({avatar,headerText,username,url,name,bio,followers,fo
   </div>
   <p className="text-white text-sm mt-4">{bio}</p>
 </div>
-<div className="px-6 py-4">
+<div className="px-6 py-4 flex justify-center flex-wrap items-center gap-2">
   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Followers: {followers}</span>
   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Following: {following}</span>
   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">Repos: {repo}</span>
