@@ -3,7 +3,7 @@ import Footer from './Footer'
 import AutoTypingText from './AutoTypingText';
 import pappuNavLogo from '../assets/pappuNavLogo.jpg'
 import Button from './Button';
-
+import ResumeOrg from '../assets/ResumeOrg.pdf'
 function Aboute() {
 
   return (
@@ -23,9 +23,9 @@ function Aboute() {
                <p className=' mt-2 font-semibold text-white '>
                 I'm  <span className=' text-xl text-orange-400 '>Pappu,</span> a passionate software developer with a keen interest in solving complex problems through efficient and scalable software solutions. With a solid background in <span className=' text-xl text-orange-400 '>Data Structures and Algorithms.</span>
                </p>
-               <a className='mt-2' href="../assets/ResumeOrg.pdf" download>
-                <Button text="Download Resume" />
-               </a>
+               <a className='mt-2' href={ResumeOrg} download>
+              <Button text="Download Resume" />
+             </a>
            </div>
 
          <div className=' w-full md:w-1/2 flex justify-center md:justify-center items-center relative z-10' >
