@@ -16,17 +16,17 @@ function NavBar() {
   };
 
   return (
-    <header className=' sticky top-0 bg-slate-900 p-2 md:flex md:justify-between md:items-center shadow-md  z-50'>
+    <header className=' sticky top-0 bg-slate-900 p-2 md:flex md:justify-between flex-row md:items-center shadow-md  z-50'>
       <nav className=' flex justify-between items-center my-2'>
-        <div>
+        <div className=''>
         <NavLink to='/'>
         <img src={pappuNavLogo} alt="" width={40} className=' rounded-full' />
         </NavLink>
         </div>   
 
          {/* open nav bar */}
-         <nav className={`${isOpen?'block duration-500':'hidden'} md:hidden w-1/2 flex justify-end gap-3`}>
-         <div className=' flex justify-center items-center list-none flex-col'>
+         <nav className={`${isOpen?'block duration-500':'hidden'} md:hidden flex justify-between flex-col  gap-3 `}>
+         <div className=' flex justify-center items-center list-none flex-row space-x-3'>
           <NavLink to='/' className={({isActive})=>`${isActive?' text-blue-500':' text-white'} text-red-500 hover:text-blue-500`}>
                 Home
           </NavLink>
@@ -48,7 +48,7 @@ function NavBar() {
             </NavLink>
          </div>
 
-         <div className='text-4xl px-3 text-white cursor-pointer'>
+         <div className='text-4xl text-end px-3 text-white cursor-pointer'>
          <FontAwesomeIcon onClick={()=>{
            if(isOpen) setIsOpen(!isOpen);
          }} icon={faXmark} />
