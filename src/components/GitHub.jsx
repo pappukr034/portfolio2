@@ -11,7 +11,7 @@ function GitHub() {
   return (
      <main className='w-full'> 
      <h1 className=' text-center mt-10 mb-8 md:mt-12 text-5xl font-bold bg-gradient-to-r from-blue-500 to-green-500 text-transparent bg-clip-text md:text-7xl'>Profile Section</h1>
-         <div className=' w-full px-3 py-3 md:mt-5 flex justify-center items-center flex-wrap gap-6'>
+         <div className=' my-5 w-full px-3 py-8 md:mt-5 flex justify-center items-center flex-wrap gap-6'>
       {/* Github prophile */}
   
     <div className=' hover:bg-slate-950 duration-100 ease-out flex flex-col justify-center items-center p-1 ring-1 rounded-md'>
