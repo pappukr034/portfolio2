@@ -16,8 +16,8 @@ function GitHub() {
   
     <div className=' hover:bg-slate-950 duration-100 ease-out flex flex-col justify-center items-center p-1 ring-1 rounded-md'>
 
-    <GitHubProfileCard headerText="Github" username={data.login} name={data.name} avatar={data.avatar_url} bio={data.bio} followers={data.followers} following={data.following} repo={data.public_repos} url="https://github.com/"  />
-    <NavLink to='https://github.com/' className=" py-2">
+    <GitHubProfileCard headerText="Github" username={data.login} name={data.name} avatar={data.avatar_url} bio={data.bio} followers={data.followers} following={data.following} repo={data.public_repos} url="https://github.com/pappukr034"  />
+    <NavLink to='https://github.com/pappukr034' className=" py-2">
     <button  className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded border focus:outline-none focus:shadow-outline cursor-pointer w-80`}>
       Github
     </button>

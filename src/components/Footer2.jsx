@@ -1,6 +1,4 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope,faHippo } from '@fortawesome/free-solid-svg-icons'
 import pappuNavLogo from '../assets/pappuNavLogo.jpg'
 import { NavLink } from 'react-router-dom'
 function Footer2() {
@@ -9,7 +7,9 @@ function Footer2() {
     <div class="container mx-auto flex flex-col items-center md:flex-row md:justify-between">
         {/* <!-- Company Logo --> */}
         <div class="mb-4 md:mb-0">
+            <NavLink to='/' >
             <img src={pappuNavLogo} alt="Company Logo" className='w-20 rounded-full' />
+            </NavLink>
         </div>
         
         {/* <!-- Email Field --> */}
