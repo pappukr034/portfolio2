@@ -10,7 +10,7 @@ const AutoTypingText = () => {
       })
     
       return (
-        <div className=' text-5xl font-bold bg-gradient-to-r from-blue-500 to-green-500 text-transparent bg-clip-text md:text-7xl'>
+        <div className=' text-5xl font-bold bg-gradient-to-r from-orange-500 to-blue-500  text-transparent bg-clip-text md:text-7xl'>
           <span>{text}</span>
           <Cursor cursorColor='red' />
         </div>

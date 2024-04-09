@@ -4,6 +4,7 @@ import AutoTypingText from './AutoTypingText';
 import pappuNavLogo from '../assets/pappuNavLogo.jpg'
 import Button from './Button';
 import ResumeOrg from '../assets/ResumeOrg.pdf'
+import SocialsIcon from './SocialsIcon';
 function Aboute() {
 
   return (
@@ -25,10 +26,13 @@ function Aboute() {
                </p>
                <a className='mt-2' href={ResumeOrg} download>
               <Button text="Download Resume" />
-             </a>
+              </a>
+              <div className=' flex justify-center items-center p-1 mt-2 bg-slate-800 rounded-md'>
+              <SocialsIcon />
+              </div>
            </div>
 
-         <div className=' w-full md:w-1/2 flex justify-center md:justify-center items-center relative z-10' >
+         <div className=' w-full md:w-1/2 flex justify-start md:justify-center items-center relative z-10' >
 
             <div className=' bg-blue-600 rounded-full p-1 backdrop-blur-lg shadow-2xl backdrop-brightness-150'>
             <img className=" w-[250px] rounded-full shadow-lg md:w-[420px]" src={pappuNavLogo} alt="About Me" />

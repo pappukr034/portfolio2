@@ -1,24 +1,27 @@
-// ProjectCard.js
+// Slider.js
 
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import ResponsiveCard from './ResponsiveCard';
 
-const ProjectCard = ({ title, description, imageUrl, githubUrl }) => {
+const ProjectCard = ({ projects }) => {
+
+
   return (
-    <div className=" max-w-25 px-3  mx-auto shadow-md rounded-lg overflow-hidden">
-      <img className="w-full h-56 object-cover object-center" src={imageUrl} alt={title} />
-      <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">{title}</div>
-        <p className="text-gray-700 text-base">{description}</p>
-      </div>
-      <div className="px-6 py-4">
-       
-        <NavLink to={githubUrl}  className="inline-block w-full text-center bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
-          GitHub
-        </NavLink>
-      </div>
+    <div className=" w-full overflow-hidden flex justify-center items-center space-x-2 px-2 py-3 my-3 flex-wrap flex-col md:flex-row gap-3 shadow-md shadow-orange-300 ">
+     
+     {projects.map((project, index) => (
+               <ResponsiveCard
+               imageUrl={project.imageUrl}
+               title={project.title}
+               description={project.description}
+               demoLink={project.demoLink}
+               githubLink={project.githubLink}
+             />
+            ))}
+     
     </div>
   );
 };
 
 export default ProjectCard;
+

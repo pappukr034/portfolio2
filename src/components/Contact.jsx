@@ -1,89 +1,161 @@
-import React, { useState } from 'react'
-import Footer from './Footer'
+import { useState } from "react";
 
-function Contact() {
+export default function Contact() {
 
-  const [name,setName]=useState('')
-  const [email,setEmail]=useState('')
-  const [mess,setMess]=useState('')
-
-  const handleClick=(e)=>{
+  const [name,setName]=useState("");
+  const [email,setEmail]=useState("");
+  const [phone,setPhone]=useState("");
+  const handleSubmit=(e)=>{
     e.preventDefault();
-    alert("Form submmited...")
-    setName("");
-    setEmail("");
-    setMess("")
+    alert("Submitted succesfully")
+    setName("")
+    setEmail("")
+    setPhone("")
   }
   return (
-    <>
-     <div className=" bg-slate-900 my-3 flex flex-wrap justify-center items-center py-10">
+      <div className="relative shadow-md shadow-orange-300 flex items-top justify-center min-h-[700px] bg-slate-900 sm:items-center sm:pt-0">
+          <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
+         <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center bg-gradient-to-r from-orange-500 to-blue-500 text-transparent bg-clip-text">Contact me</h1>
+<div className="mt-10 overflow-hidden">
+  <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="p-6 mr-2 bg-slate-800 rounded-md">
+          <h1 className="text-3xl sm:text-4xl 
+           text-orange-500 font-extrabold tracking-tight">
+              Get in touch: 
+          </h1>
+          <p className="text-normal text-lg sm:text-xl font-medium text-white mt-2">
+              Fill in the form to start a conversation
+          </p>
 
-    <div className=' hidden md:block rounded-md justify-center flex-col items-center'>
-      <img className=' max-w-md rounded-md' src="https://media.istockphoto.com/id/1450058572/photo/businessman-using-a-laptop-and-touching-on-virtual-screen-contact-icons-consists-of-telephone.jpg?s=2048x2048&w=is&k=20&c=7KhNOYQ1PAxuAcVxu_YieJo5wvIvBpcw1nkXDJ5YM30=" alt="" />
-      <img className=' max-w-md rounded-md' src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29udGFjdCUyMHVzJTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D" alt="" />
-    </div>
-   
-    <div className=" md:w-1/2 w-full  max-w-md mx-auto  bg-slate-800 p-2 rounded-md shadow-md">
-    <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center bg-gradient-to-r from-blue-500 to-green-500 text-transparent bg-clip-text">Contact me...</h1>
-    <form>
-       
-      <div className="mb-4 py-5">
-        <label for="name" className="block text-white font-bold mb-2">Name</label>
-        <input
-          type="text"
-          id="name"
-          value={name}
-          onChange={(e)=> setName(e.target.value)}
-          required
-          name="name"
-          className="w-full bg-gray-800 text-white px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-          placeholder="Enter your name"
-        />
+          <div className="flex items-center mt-8 text-white">
+              <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  className="w-8 h-8 text-gray-500"
+              >
+                  <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+              </svg>
+              <div className="ml-4 text-md tracking-wide font-semibold w-40 text-white">
+                  Vaishali, BIHAR
+              </div>
+          </div>
+
+          <div className="flex items-center mt-4 text-white">
+              <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  className="w-8 h-8 text-gray-500"
+              >
+                  <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+              </svg>
+              <div className="ml-4 text-md tracking-wide font-semibold w-40">
+                  +91 7667384500
+              </div>
+          </div>
+
+          <div className="flex items-center mt-2 text-white">
+              <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  className="w-8 h-8 text-gray-500"
+              >
+                  <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+              </svg>
+              <div className="ml-4 text-md tracking-wide font-semibold w-40">
+                  pappu034@gmail.com
+              </div>
+          </div>
       </div>
 
-      <div className="mb-4">
-        <label for="email" className="block text-white font-bold mb-2">Email</label>
-        <input
-          type="email"
-          id="email"
-          value={email}
-          onChange={(e)=> setEmail(e.target.value)}
-          name="email"
-          className="w-full bg-gray-800 text-white px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-          placeholder="Enter your email"
-        />
-      </div>
+      <form onSubmit={handleSubmit} className="flex flex-col justify-center p-10 gap-1">
+          <div className="flex flex-col">
+              <label for="name" className="hidden">
+                  Full Name
+              </label>
+              <input
+                  type="name"
+                  name="name"
+                  value={name}
+                  id="name"
+                  onChange={(e)=> setName(e.target.value)}
+                  placeholder="Full Name"
+                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-slate-700 border border-gray-400 text-white font-semibold focus:border-orange-500 focus:outline-none"
+              />
+          </div>
 
-      <div className="mb-4">
-        <label for="message" className="block text-white font-bold mb-2">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          value={mess}
-          onChange={(e)=> setMess(e.target.value)}
-          spellCheck="false"
-          rows="4"
-          className="w-full bg-gray-800 text-white px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 resize-none"
-          placeholder="Enter your message"
-        ></textarea>
-      </div>
+          <div className="flex flex-col mt-2">
+              <label for="email" className="hidden">
+                  Email
+              </label>
+              <input
+                  type="email"
+                  name="email"
+                  value={email}
+                  onChange={(e)=> setEmail(e.target.value)}
+                  id="email"
+                  placeholder="Email"
+                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-slate-700 border border-gray-400 text-white font-semibold focus:border-orange-500 focus:outline-none"
+              />
+          </div>
 
-      <div className="flex justify-center">
-        <button
-          type="submit"
-          onClick={handleClick}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
-        >
-          Submit
-        </button>
-      </div>
-    </form>
+          <div className="flex flex-col mt-2">
+              <label for="tel" className="hidden">
+                  Number
+              </label>
+              <input
+                  type="tel"
+                  name="tel"
+                  value={phone}
+                  onChange={(e)=> setPhone(e.target.value)}
+                  id="tel"
+                  placeholder="Telephone Number"
+                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-slate-700 border border-gray-400 text-white font-semibold focus:border-orange-500 focus:outline-none"
+              />
+          </div>
+
+          <button
+              type="submit"
+              className=" bg-orange-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-600 transition ease-in-out duration-300"
+          >
+              Submit
+          </button>
+      </form>
   </div>
 </div>
-
- <Footer />
-    </>
-  )
+</div>
+      </div>
+  );
 }
-
-export default Contact
