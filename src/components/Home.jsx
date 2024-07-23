@@ -8,6 +8,7 @@ import ResumeOrg from '../assets/ResumeOrg.pdf'
 import SocialsIcon from './SocialsIcon'
 import Skills from './Skills'
 import Projects from './Projects'
+import FAQ from './FAQ'
 
 
 function Home() {
@@ -33,6 +34,7 @@ function Home() {
     <Skills />
     <Projects />
     <Contact />
+    <FAQ />
     <Footer />
     </>
   )

@@ -12,6 +12,11 @@ function Skills() {
       logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZy0F9pfOV_ZbLtxkgOciRM-zzLDfusG3bKhAemYwcSA&s"
     },
     {
+      title: 'SQL',
+      description: 'Structured query language (SQL) is a programming language for storing and processing information in a relational database',
+      logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUAbQJ1smNrIvvMazOCFGA3d2T7aqawCi19Q&s"
+    },
+    {
       title: 'React.js',
       description: 'Experience building SPAs and dynamic UIs with React.js.',
       logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzkzv19f4ThzUieybTxuYSDjI4hG6dTSfSXBxycTCrkA&s"
