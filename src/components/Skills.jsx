@@ -36,7 +36,7 @@ function Skills() {
 
   return (
     <>
-    <main className='w-full shadow-md shadow-orange-300 p-3 space-x-2'> 
+    <main className='w-full mt-3 shadow-md p-3 space-x-2'> 
       <h1 className=' text-start md:text-center px-1 mt-10 mb-2 md:mt-12 text-5xl font-bold bg-gradient-to-r from-orange-500 to-blue-500  text-transparent bg-clip-text md:text-8xl'>My Skills</h1>
          <div className=' w-full px-3 py-3 md:mt-5 flex justify-center items-center flex-wrap gap-6'>
          </div>

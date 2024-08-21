@@ -13,7 +13,7 @@ export default function Contact() {
     setPhone("")
   }
   return (
-      <div className="relative shadow-md shadow-orange-300 flex items-top justify-center min-h-[700px] bg-slate-900 sm:items-center sm:pt-0">
+      <div className="relative shadow-md flex items-top justify-center min-h-[700px] bg-slate-900 sm:items-center sm:pt-0">
           <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center bg-gradient-to-r from-orange-500 to-blue-500 text-transparent bg-clip-text">Contact me</h1>
 <div className="mt-10 overflow-hidden">

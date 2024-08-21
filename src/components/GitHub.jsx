@@ -26,8 +26,6 @@ function GitHub() {
     </div>
 
     </div>
-
-    <Footer />
      </main>
   )
 }

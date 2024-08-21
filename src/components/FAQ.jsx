@@ -23,8 +23,8 @@ const FAQ = () => {
   };
 
   return (
-    <div className=" w-full mx-3 my-6 px-4 rounded-lg border border-orange-200 py-6">
-      <h2 className="text-3xl text-white font-bold mb-6 text-center">Frequently Asked Questions</h2>
+    <div className=" my-8 px-6 mx-3 rounded-lg border border-orange-200 py-6">
+      <h2 className="text-3xl text-orange-400 font-bold mb-6 text-center">Frequently Asked Questions</h2>
       <div className="space-y-4">
         {faqs.map((faq, index) => (
           <div key={index} className="border-b-2 border-gray-200 pb-4">
@@ -34,7 +34,7 @@ const FAQ = () => {
             >
               <h3 className="text-xl font-semibold text-gray-200 flex justify-between items-center">
                 {faq.question}
-                <span className="text-xl">
+                <span className="text-xl text-orange-600">
                   {activeIndex === index ? '-' : '+'}
                 </span>
               </h3>

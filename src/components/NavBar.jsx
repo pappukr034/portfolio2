@@ -7,27 +7,19 @@ import { NavLink } from "react-router-dom";
 import NavBarOpen from './NavBarOpen';
 import Button from '../components/Button'
 
+
 function NavBar() {
 
   return (
-    <header className=' sticky top-0 bg-slate-900 p-2 md:justify-center md:items-center shadow-md  z-50'>
-
-     {/* logo */}
-     <div className=''>
-        <NavLink to='/'>
+    <header className=' w-full sticky top-0 bg-slate-900 p-2 md:justify-center md:flex-row md:items-center shadow-md  z-50'>
+ 
+     {/* NavBar */}
+      <div className=' w-full flex justify-center items-center py-2 text-[18px] px-3'
+      >
+        <NavLink to='/' className={' absolute top-5 left-1 '}>
         <img src={pappuNavLogo} alt="" width={40} className=' rounded-full' />
         </NavLink>
-      </div>
- 
-    {/* NavBar */}
-      <div className='relative left-9 bottom-8'>
       <NavBarOpen />
-      </div>
-
-      <div className=' absolute right-4 bottom-12 hidden md:block'>
-       <NavLink to='contactUs'>
-       <Button text="Contact" />
-       </NavLink>
       </div>
 
     </header>

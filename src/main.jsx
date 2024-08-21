@@ -16,6 +16,7 @@ import Contact from './components/Contact.jsx';
 import GitHub, { githubInfoLoader } from './components/GitHub.jsx';
 import Skills from './components/Skills.jsx';
 import Projects from './components/Projects.jsx';
+import CodingProfile from './components/CodingProfile.jsx';
 
 
 
@@ -31,6 +32,7 @@ const router=createBrowserRouter(
       <Route path='skills' element={<Skills />} />
       <Route path='contactUs' element={<Contact />} />
       <Route path='projects' element={<Projects />} />
+      <Route path='codingProfile' element={<CodingProfile />} />
     </Route>
    )
 )
